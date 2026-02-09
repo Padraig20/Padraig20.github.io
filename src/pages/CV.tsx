@@ -238,7 +238,7 @@ const awards = [
 ];
 
 const volunteering = [
-  { start: "Sep 2024", end: "Present", title: "Co-Founder and Co-Organizer", organization: "Google Developer Group, TU Wien", details: "As co-founder and organizer of the Google Developer Group at the Technical University of Vienna, I organize bi-weekly journal clubs and speaker series about intelligent systems with the help of my fellow organizers." },
+  { start: "Sep 2024", end: "Aug 2025", title: "Co-Founder and Co-Organizer", organization: "Google Developer Group, TU Wien", details: "As co-founder and organizer of the Google Developer Group at the Technical University of Vienna, I organize bi-weekly journal clubs and speaker series about intelligent systems with the help of my fellow organizers." },
   { start: "Sep 2023", end: null, title: "Local Organizing Team", organization: "TU Wien", details: "Helped in organizing the European Summer School for Information Retrieval 2023, as part of the Data Science Research Unit under Dr. Allan Hanbury." },
   { start: "Sep 2024", end: "Jan 2025", title: "Mentor", organization: "TU Wien", details: "As a mentor, I look after a group of 20 mentees and accompany them with regular meetings through the first semester at the TU Wien." },
   { start: "Oct 2020", end: "Present", title: "Soldier", organization: "Austrian Armed Forces", details: "As a soldier of the Miliz, I ensure that critical infrastructures in the regions are safe and assist in security police assistance operations such as border surveillance and disaster relief." },
