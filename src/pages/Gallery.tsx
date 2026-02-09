@@ -100,7 +100,7 @@ const Gallery = () => {
 
       {/* Lightbox Dialog */}
       <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
-        <DialogContent className="max-w-4xl w-full p-0 bg-card border-border overflow-hidden">
+        <DialogContent className="max-w-4xl w-full p-0 bg-card border-border overflow-hidden [&>button]:hidden">
           <div className="relative">
             {/* Close button */}
             <button
