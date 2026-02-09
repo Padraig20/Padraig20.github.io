@@ -1,4 +1,4 @@
-# Pesonal Website
+# Personal Website
 
 This repository contains my own personal website that I built with:
 
