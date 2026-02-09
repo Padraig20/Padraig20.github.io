@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 15% 8%;
+    --foreground: 60 10% 90%;
+
+    --card: 220 15% 12%;
+    --card-foreground: 60 10% 90%;
+
+    --popover: 220 15% 10%;
+    --popover-foreground: 60 10% 90%;
+
+    --primary: 160 60% 45%;
+    --primary-foreground: 220 15% 8%;
+
+    --secondary: 220 12% 18%;
+    --secondary-foreground: 60 10% 90%;
+
+    --muted: 220 12% 18%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 160 50% 40%;
+    --accent-foreground: 220 15% 8%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 60 10% 90%;
+
+    --border: 220 12% 20%;
+    --input: 220 12% 20%;
+    --ring: 160 60% 45%;
+
+    --radius: 0.25rem;
+
+    /* Nucleotide colors - classic bioinformatics */
+    --nucleotide-a: 120 60% 40%;  /* Adenine - Green */
+    --nucleotide-t: 0 70% 55%;     /* Thymine - Red */
+    --nucleotide-c: 210 80% 55%;   /* Cytosine - Blue */
+    --nucleotide-g: 45 90% 50%;    /* Guanine - Yellow/Amber */
+
+    --sidebar-background: 220 15% 10%;
+    --sidebar-foreground: 60 10% 90%;
+    --sidebar-primary: 160 60% 45%;
+    --sidebar-primary-foreground: 220 15% 8%;
+    --sidebar-accent: 220 12% 18%;
+    --sidebar-accent-foreground: 60 10% 90%;
+    --sidebar-border: 220 12% 20%;
+    --sidebar-ring: 160 60% 45%;
+
+    --font-serif: 'Libre Baskerville', Georgia, serif;
+    --font-sans: 'Source Sans 3', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  }
+
+  .dark {
+    /* Dark mode inherits the same dark theme */
+    --background: 220 15% 8%;
+    --foreground: 60 10% 90%;
+
+    --card: 220 15% 12%;
+    --card-foreground: 60 10% 90%;
+
+    --popover: 220 15% 10%;
+    --popover-foreground: 60 10% 90%;
+
+    --primary: 160 60% 45%;
+    --primary-foreground: 220 15% 8%;
+
+    --secondary: 220 12% 18%;
+    --secondary-foreground: 60 10% 90%;
+
+    --muted: 220 12% 18%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 160 50% 40%;
+    --accent-foreground: 220 15% 8%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 60 10% 90%;
+
+    --border: 220 12% 20%;
+    --input: 220 12% 20%;
+    --ring: 160 60% 45%;
+
+    --sidebar-background: 220 15% 10%;
+    --sidebar-foreground: 60 10% 90%;
+    --sidebar-primary: 160 60% 45%;
+    --sidebar-primary-foreground: 220 15% 8%;
+    --sidebar-accent: 220 12% 18%;
+    --sidebar-accent-foreground: 60 10% 90%;
+    --sidebar-border: 220 12% 20%;
+    --sidebar-ring: 160 60% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  
+  /* Nucleotide colors */
+  .text-nucleotide-a { color: hsl(var(--nucleotide-a)); }
+  .text-nucleotide-t { color: hsl(var(--nucleotide-t)); }
+  .text-nucleotide-c { color: hsl(var(--nucleotide-c)); }
+  .text-nucleotide-g { color: hsl(var(--nucleotide-g)); }
+}
