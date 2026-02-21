@@ -114,10 +114,9 @@ const journalPubs = [
   {
     year: 2026,
     authors: "Martin C. Frith, Patrick Boppert, Patrick Styll, Milot Mirdita",
-    title:
-      "Simple and thorough detection of related sequences with position-varying probabilities of substitutions, insertions, and deletions",
+    title: "Simple and thorough detection of related sequences with position-varying probabilities of substitutions, insertions, and deletions",
     venue: "Journal of Computational Biology",
-    doi: "TBA",
+    doi: "10.1177/15578666261428480",
     url: "",
   },
 ];
