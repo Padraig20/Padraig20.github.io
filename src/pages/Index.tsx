@@ -10,7 +10,8 @@ import { Mail, Github, GraduationCap, ExternalLink, Linkedin } from "lucide-reac
 // const gazeImages = [gazeTopLeft, gazeTopCenter, ...];
 
 const news = [
-  { date: "Feb 2026", text: "New paper on simple and thorough detection of related sequences published in the Journal of Computational Biology." },
+  { date: "Apr 2026", text: "I will be attending RECOMB 2026 for a poster presentation! Hit me up if you're going to be there :)" },
+  { date: "Mar 2026", text: "New paper on simple and thorough detection of related sequences published in the Journal of Computational Biology." },
   { date: "Dec 2025", text: "Was officially awarded the Bachelor of Honors at TU Wien." },
   { date: "Dec 2025", text: "Started working with Prof. Cai Na in the Medical Genomics Group at ETH Zürich!" },
   { date: "Jul 2025", text: "Was awarded a scholarship of 30.000€ by the State of Lower Austria for outstanding academic achievements." },

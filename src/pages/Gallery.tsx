@@ -4,11 +4,14 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const galleryData: Record<string, { src: string; caption: string }[]> = {
+  "2026": [
+    { src: "/gallery/2026/1.jpg", caption: "Had a lovely Spanish dinner with the lab :)" },
+  ],
   "2025": [
     { src: "/gallery/2025/1.jpeg", caption: "Leonardo took me hiking during my time in Madrid :)" },
     { src: "/gallery/2025/2.jpeg", caption: "All UTSIP interns received a warm welcome at UTokyo!" },
     { src: "/gallery/2025/3.jpg", caption: "Frith-sensei, Mariko, Timea and I visited the Advanced Genomics Workshop 2025. We're standing in front of Mariko-san's poster! :)" },
-    { src: "/gallery/2025/4.jpg", caption: "All UTSIP students had a presentation in the end. I couldn't, though, since I broke my arm... oh well" },
+    { src: "/gallery/2025/4.jpg", caption: "All UTSIP students had a presentation in the end. (I couldn't, though, since I broke my arm...)" },
     { src: "/gallery/2025/5.jpeg", caption: "Max and I visited the Nvidia Simulation Hackathon in Zurich!" },
     { src: "/gallery/2025/6.jpeg", caption: "I was invited to Oslo to discuss how to create a network between European students." },
     { src: "/gallery/2025/7.jpeg", caption: "Allan visited me during my BHons graduation ceremony!" },
