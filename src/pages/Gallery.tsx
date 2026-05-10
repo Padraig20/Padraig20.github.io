@@ -7,6 +7,7 @@ const galleryData: Record<string, { src: string; caption: string }[]> = {
   "2026": [
     { src: "/gallery/2026/1.jpg", caption: "Had a lovely Spanish dinner with the lab :)" },
     { src: "/gallery/2026/2.jpg", caption: "Group hike in Rigi ☀️" },
+    { src: "/gallery/2026/3.jpeg", caption: "Took a boat ride on Lake Lucerne!" },
   ],
   "2025": [
     { src: "/gallery/2025/1.jpeg", caption: "Leonardo took me hiking during my time in Madrid :)" },
