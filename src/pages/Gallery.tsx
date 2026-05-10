@@ -6,6 +6,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 const galleryData: Record<string, { src: string; caption: string }[]> = {
   "2026": [
     { src: "/gallery/2026/1.jpg", caption: "Had a lovely Spanish dinner with the lab :)" },
+    { src: "/gallery/2026/2.jpg", caption: "Group hike in Rigi ☀️" },
   ],
   "2025": [
     { src: "/gallery/2025/1.jpeg", caption: "Leonardo took me hiking during my time in Madrid :)" },
