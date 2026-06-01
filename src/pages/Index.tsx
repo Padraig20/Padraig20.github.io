@@ -10,7 +10,7 @@ import { Mail, Github, GraduationCap, ExternalLink, Linkedin } from "lucide-reac
 // const gazeImages = [gazeTopLeft, gazeTopCenter, ...];
 
 const news = [
-  { date: "Apr 2026", text: "I will be attending RECOMB 2026 for a poster presentation! Hit me up if you're going to be there :)" },
+  { date: "May 2026", text: "Attended RECOMB 2026 for a poster presentation :)" },
   { date: "Mar 2026", text: "New paper on simple and thorough detection of related sequences published in the Journal of Computational Biology." },
   { date: "Dec 2025", text: "Was officially awarded the Bachelor of Honors at TU Wien." },
   { date: "Dec 2025", text: "Started working with Prof. Cai Na in the Medical Genomics Group at ETH Zürich!" },
@@ -55,7 +55,7 @@ const Index = () => {
             Masters student in Computer Science at <span className="font-mono text-primary">[ETH Zürich]</span>, 
             where I am currently being supervised by Prof. <span className="font-mono text-sm">[Cai Na]</span>.
             I am excited about automation, especially in bioinformatics and medicine. I am currently obsessing over two areas specifically:
-            remote homology detection and single-cell sequence-to-function models.
+            remote homology detection and sequence-to-function models.
 
             <br/>
 

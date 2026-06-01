@@ -8,6 +8,8 @@ const galleryData: Record<string, { src: string; caption: string }[]> = {
     { src: "/gallery/2026/1.jpg", caption: "Had a lovely Spanish dinner with the lab :)" },
     { src: "/gallery/2026/2.jpg", caption: "Group hike in Rigi ☀️" },
     { src: "/gallery/2026/3.jpeg", caption: "Took a boat ride on Lake Lucerne!" },
+    { src: "/gallery/2026/4.png", caption: "My (very first) poster presentation at RECOMB 2026!" },
+    { src: "/gallery/2026/5.jpeg", caption: "Met lots of fun people at the conference 👀" },
   ],
   "2025": [
     { src: "/gallery/2025/1.jpeg", caption: "Leonardo took me hiking during my time in Madrid :)" },

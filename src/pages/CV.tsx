@@ -169,6 +169,14 @@ const confPubs = [
 
 const talks = [
   {
+    date: "May 2026",
+    title: "dummer-build: Improved Position-Specific Profile Estimation for Detecting Distantly-Related Genetic Sequences",
+    event: "RECOMB 2026, Thessaloniki, Greece",
+    poster: true,
+    slidesUrl:
+      "https://drive.google.com/file/d/1rQKHkfBtzR68R6seCqS7402TVo7tdr1J/view?usp=drive_link",
+  },
+  {
     date: "Sep 2025",
     title: "MedAID-ML: A Multilingual Dataset of Biomedical Texts for Detecting AI-Generated Content",
     event: "CLEF 2025, Madrid, Spain",
@@ -300,6 +308,7 @@ const ExperienceItem = ({
 );
 
 import { Download, ExternalLink, Presentation } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 
 const CV = () => {
@@ -381,7 +390,7 @@ const CV = () => {
         </ul>
       </Section>
 
-      <Section title="Talks & Presentations">
+      <Section title="Talks & Posters">
         <ul className="space-y-3 text-sm">
           {talks.map((t, i) => (
             <li key={i} className="flex gap-4">
@@ -396,7 +405,7 @@ const CV = () => {
                     rel="noreferrer"
                     className="ml-2 text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-1 text-xs"
                   >
-                    <Presentation size={12} /> Slides
+                    <Presentation size={12} /> {t.poster ? "Poster" : "Slides"}
                   </a>
                 )}
               </div>
@@ -426,20 +435,24 @@ const CV = () => {
       </Section>
 
       <Section title="Supervisors">
-        <div className="space-y-5">
+        <Accordion type="multiple" className="space-y-2">
           {supervisors.map((s, i) => (
-            <div key={i} className="text-sm">
-              <div className="mb-1">
-                <span className="font-semibold">{s.name}</span>
-                <span className="text-muted-foreground">
-                  {" "}
-                  — {s.role}, {s.institution}
+            <AccordionItem key={i} value={s.name} className="border-border/50">
+              <AccordionTrigger className="py-3 text-left font-sans text-sm font-normal hover:no-underline">
+                <span>
+                  <span className="font-semibold">{s.name}</span>
+                  <span className="text-muted-foreground">
+                    {" "}
+                    — {s.role}, {s.institution}
+                  </span>
                 </span>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">{s.description}</p>
-            </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
+              </AccordionContent>
+            </AccordionItem>
           ))}
-        </div>
+        </Accordion>
       </Section>
     </div>
   );
