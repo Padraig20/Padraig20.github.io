@@ -346,21 +346,19 @@ const CV = () => {
             <li key={i}>
               <span className="text-muted-foreground">[{p.year}] </span>
               <span>{p.authors}. </span>
-              {p.url ? (
-                <a
-                  href={p.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-semibold hover:text-primary transition-colors inline-flex items-center gap-1"
-                >
-                  {p.title} <ExternalLink size={12} className="inline" />
-                </a>
-              ) : (
-                <span className="font-semibold">{p.title}</span>
-              )}
+              <span className="font-semibold">{p.title}</span>
               <span>. </span>
               <span className="italic text-muted-foreground">{p.venue}. </span>
-              {p.doi && <span className="text-primary text-xs">DOI: {p.doi}</span>}
+              {p.doi && (
+                <a
+                  href={p.url ?? `https://doi.org/${p.doi}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="ml-2 text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-1 text-xs"
+                >
+                  <ExternalLink size={12} /> DOI: {p.doi}
+                </a>
+              )}
             </li>
           ))}
         </ul>
