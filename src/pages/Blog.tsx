@@ -2,6 +2,12 @@ import { Link } from "react-router-dom";
 
 const posts = [
   {
+    slug: "confession-ai",
+    date: "Jun 12, 2026",
+    title: "Confession: I trusted Claude too much",
+    excerpt: "I'm afraid I accidentally put too much trust into Claude and moved a bit too fast in my research...",
+  },
+  {
     slug: "from-cs-to-bioinformatics",
     date: "Feb 9, 2026",
     title: "From Computer Science to Bioinformatics",
