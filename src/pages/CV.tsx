@@ -130,6 +130,13 @@ const journalPubs = [
 
 const confPubs = [
   {
+    year: 2026,
+    authors: "Patrick Styll, Yazheng Di, Na Cai",
+    title: "Uncertainty-Aware Personalised Gene Expression Prediction Improves Cell-Type-Specific Association Testing",
+    venue: "bioRxiv",
+    url: "https://www.biorxiv.org/content/10.64898/2026.11.06.764604v1.abstract",
+  },
+  {
     year: 2025,
     authors: "Patrick Styll, Leonardo Campillos-Llanos, Isabel Fernández-García, Jorge and Segura-Bédmar",
     title: "MedAID-ML: A Multilingual Dataset of Biomedical Texts for Detecting AI-Generated Content",

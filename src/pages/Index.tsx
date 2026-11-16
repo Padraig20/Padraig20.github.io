@@ -10,6 +10,7 @@ import { Mail, Github, GraduationCap, ExternalLink, Linkedin } from "lucide-reac
 // const gazeImages = [gazeTopLeft, gazeTopCenter, ...];
 
 const news = [
+  { date: "Nov 2026", text: "New pre-print on uncertainty-aware cell-type-level gene expression prediction and association testing, check it out!!" },
   { date: "May 2026", text: "Attended RECOMB 2026 for a poster presentation :)" },
   { date: "Mar 2026", text: "New paper on simple and thorough detection of related sequences published in the Journal of Computational Biology." },
   { date: "Dec 2025", text: "Was officially awarded the Bachelor of Honors at TU Wien." },
